@@ -5,7 +5,26 @@ Returns: an integer
 def single_number(arr):
     # Your code here
 
-    pass
+    arr.sort()
+
+    single = None
+    test = arr[0]
+
+    for n in arr[1:]:
+        if test is not None:
+            if test != n:
+                single = test
+                test = n
+            else:
+                test = None
+        else:
+            test = n
+
+    if single is not None:
+        return single
+    else:
+        return test
+
 
 
 if __name__ == '__main__':

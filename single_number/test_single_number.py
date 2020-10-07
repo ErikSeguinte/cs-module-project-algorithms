@@ -7,6 +7,7 @@ class Test(unittest.TestCase):
         arr = []
 
         for i in range(1000):
+        # for i in range(5):
             arr.append(i)
             arr.append(i)
 
