@@ -21,7 +21,10 @@ class Test(unittest.TestCase):
         answer = sliding_window_max(arr, k)
         end_time = time.time()
 
-        self.assertTrue((end_time - start_time) < 1)
+        time_elapsed = end_time - start_time
+        print(time_elapsed)
+
+        self.assertTrue((time_elapsed) < 1)
         self.assertEqual(answer, expected)
 
 

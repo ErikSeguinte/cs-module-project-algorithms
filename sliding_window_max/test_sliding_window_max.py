@@ -4,6 +4,7 @@ from sliding_window_max import sliding_window_max
 class Test(unittest.TestCase):
     def test_sliding_window_max_1(self):
         arr = [1, 3, -1, -3, 5, 3, 6, 7]
+        arr = [1, 3, -1, -3, 5, 3, 6, 7]
         k = 3
         output = sliding_window_max(arr, k)
         expected = [3, 3, 5, 5, 6, 7]
@@ -12,7 +13,7 @@ class Test(unittest.TestCase):
 
     def test_sliding_window_max_2(self):
         arr = [1, 3, -1, -3, 5, 3, 6, 7]
-        k = 2  
+        k = 2
         output = sliding_window_max(arr, k)
         expected = [3, 3, -1, 5, 5, 6, 7]
 
